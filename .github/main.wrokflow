@@ -1,6 +1,8 @@
 workflow "PR Checklist" {
   on = "pull_request"
   resolves = ["Create PR Comment"]
+    paths:
+      -test2/**
 }
 
 action "Create PR Comment" {
